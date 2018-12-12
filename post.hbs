@@ -35,25 +35,9 @@ into the {body} of the default.hbs template --}} <header
                     <div class="post-content">
                         {{content}}
                     </div>
-                    <div id="vcomments"></div>
-                    <script>
-                        new Valine({
-                            el: '#vcomments',
-                            appId: 'QGGtdQT0pUruQNXoeX9ezEU0',
-                            appKey: 'U2KEbOLSWbVvwwCvq8TfERpm-gzGzoHsz',
-                            notify: false,
-                            verify: false,
-                            avatar: 'mm',
-                            placeholder: 'Placeholder',
-                            visitor: true
-                        })
-                        {{!-- new Valine({
-                            el: '#vcomments',
-                            appId: 'QGGtdQT0pUruQNXoeX9ezEU0',
-                            appKey: 'U2KEbOLSWbVvwwCvq8TfERpm-gzGzoHsz',
-                            visitor: true
-                        }) --}}
-                    </script>
+                    <div id="vcomments">
+                        <section id="isso-thread"></section>
+                    </div>
                 </section>
                 {{!-- Email subscribe form at the bottom of the page --}}
                 {{#if @labs.subscribers}}
