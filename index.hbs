@@ -2,7 +2,7 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+{{!-- The big featured header, it uses blog cover image as a BG if available 主页的头图 --}}
 <header class="site-header outer {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
     <div class="inner">
         <div class="site-header-content">
@@ -26,7 +26,7 @@ into the {body} of the default.hbs template --}}
         <div class="post-feed">
             {{#foreach posts}}
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs 文章列表相关 --}}
                 {{> "post-card"}}
 
             {{/foreach}}

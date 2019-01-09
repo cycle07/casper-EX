@@ -1,13 +1,13 @@
 {{!< default}}
     {{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}} <header
+into the {body} of the default.hbs template 传说中的详情页【的小header】 --}} <header
     class="site-header outer">
     <div class="inner">
         {{> "site-nav"}}
     </div>
     </header>
 
-    {{!-- Everything inside the #post tags pulls data from the post --}}
+    {{!-- Everything inside the #post tags pulls data from the post 文章主体 --}}
     {{#post}}
 
     <main id="site-main" class="site-main outer">
@@ -72,7 +72,7 @@ into the {body} of the default.hbs template --}} <header
         </div>
     </main>
 
-    {{!-- Links to Previous/Next posts --}}
+    {{!-- Links to Previous/Next posts 其他附近的文章 --}}
     <aside class="read-next outer">
         <div class="inner">
             <div class="read-next-feed">
@@ -121,7 +121,7 @@ into the {body} of the default.hbs template --}} <header
         </div>
     </aside>
 
-    {{!-- Floating header which appears on-scroll, included from includes/floating-header.hbs --}}
+    {{!-- Floating header which appears on-scroll, included from includes/floating-header.hbs 滚轮向上的title和share --}}
     {{> floating-header}}
 
     {{/post}}
